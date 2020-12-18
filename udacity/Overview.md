@@ -57,7 +57,7 @@ Confidence interval
 If N * P = 5 AND N*(1-P) > 5, assume a normal distribution.
 If we have a p = 100/1000 (# users clicked / # users (N)) 
 
-If you look up a binomial distribution elsewhere, you may find that it has a mean of $$np$$ and a standard deviation of $$\sqrt{np(1-p)} 
+If you look up a binomial distribution elsewhere, you may find that it has a mean of $np$ and a standard deviation of $$\sqrt{np(1-p)} 
 np(1−p)$$
 This is for a binomial distribution defined as the total number of successes, whereas we will use the fraction or proportion of successes throughout this class. In this case, the mean is $$p$$ and standard deviation is $$\sqrt{\frac{p(1-p)}{n}}$$ 
 
