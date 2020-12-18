@@ -41,7 +41,7 @@ implementation of probability: count the unique one child page click of one page
 
 ### Review statistics
 CTP follow a binomial distribution.
-Binomial distribution
+**Binomial distribution**
 - 2 types of outcomes (success, failure)
 - Independent events
 - Identical distribution
@@ -53,26 +53,39 @@ Ex.
 4. complete course after 2 weeks, outcome complete or not complete. Very close to independent - students are often not related.
 5. purchase of item within one week, outcome purchase or not purchase. Not independent. The items in the shopping cart are related.
 
-Confidence interval
+**Confidence interval**
 If N * P = 5 AND N*(1-P) > 5, assume a normal distribution.
 If we have a p = 100/1000 (# users clicked / # users (N)) 
 
-If you look up a binomial distribution elsewhere, you may find that it has a mean of $np$ and a standard deviation of $$\sqrt{np(1-p)} 
-np(1−p)$$
-This is for a binomial distribution defined as the total number of successes, whereas we will use the fraction or proportion of successes throughout this class. In this case, the mean is $$p$$ and standard deviation is $$\sqrt{\frac{p(1-p)}{n}}$$ 
+...
+Standard deviation of binomial
+If you look up a binomial distribution elsewhere, you may find that it has a mean of np and a standard deviation of \sqrt{np(1-p)} 
+This is for a binomial distribution defined as the total number of successes, whereas we will use the fraction or proportion of successes throughout this class. In this cas, the mean is p and standard deviation is \sqrt{\frac{p(1-p)}{n}} 
 
 Useful equations
 You may find these equations helpful in solving the quiz:
-$p_hat = X/N$
-$$SE = sqrt(p_hat (1-p_hat) / N)$$ 
-$$m = z* SE$$
-
-Standard deviation of binomial
-If you look up a binomial distribution elsewhere, you may find that it has a mean of npnp and a standard deviation of $$\sqrt{np(1-p)} 
-np(1−p)$$
-This is for a binomial distribution defined as the total number of successes, whereas we will use the fraction or proportion of successes throughout this class. In this case, the mean is pp and standard deviation is $$\sqrt{\frac{p(1-p)}{n}}$$
+p_hat = X/N  
+SE = sqrt(p_hat (1-p_hat) / N)  
+m = z* SE
 
 
+**Two-tailed vs. one-tailed tests**
+The null hypothesis and alternative hypothesis proposed here correspond to a two-tailed test, which allows you to distinguish between three cases:
+
+A statistically significant positive result
+A statistically significant negative result
+No statistically significant difference.
+Sometimes when people run A/B tests, they will use a one-tailed test, which only allows you to distinguish between two cases:
+
+A statistically significant positive result
+No statistically significant result
+Which one you should use depends on what action you will take based on the results. If you're going to launch the experiment for a statistically significant positive change, and otherwise not, then you don't need to distinguish between a negative result and no result, so a one-tailed test is good enough. If you want to learn the direction of the difference, then a two-tailed test is necessary.
+
+...
+### What change is practically significant?
+Statistically, what's substantive in addition to being statistically significant. Different rules for different businesses. E.G.
 ### Design
-
+Power has an inverse trade-off with size. 
 ### Analyze
+...
+...
