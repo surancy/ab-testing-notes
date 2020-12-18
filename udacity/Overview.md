@@ -53,6 +53,31 @@ Ex.
 4. complete course after 2 weeks, outcome complete or not complete. Very close to independent - students are often not related.
 5. purchase of item within one week, outcome purchase or not purchase. Not independent. The items in the shopping cart are related.
 
+Confidence interval
+If N * P = 5 AND N*(1-P) > 5, assume a normal distribution.
+If we have a p = 100/1000 (# users clicked / # users (N)) 
+
+If you look up a binomial distribution elsewhere, you may find that it has a mean of npnp and a standard deviation of \sqrt{np(1-p)} 
+np(1−p)
+​	 . This is for a binomial distribution defined as the total number of successes, whereas we will use the fraction or proportion of successes throughout this class. In this cas, the mean is pp and standard deviation is \sqrt{\frac{p(1-p)}{n}} 
+n
+p(1−p)
+​	 
+​	 .
+
+Useful equations
+You may find these equations helpful in solving the quiz:
+p_hat = X/N  SE = sqrt(p_hat (1-p_hat) / N)  m = z* SE
+
+Standard deviation of binomial
+If you look up a binomial distribution elsewhere, you may find that it has a mean of npnp and a standard deviation of \sqrt{np(1-p)} 
+np(1−p)
+​	 . This is for a binomial distribution defined as the total number of successes, whereas we will use the fraction or proportion of successes throughout this class. In this case, the mean is pp and standard deviation is \sqrt{\frac{p(1-p)}{n}} 
+n
+p(1−p)
+​	 
+​	 .
+
 ### Design
 
 ### Analyze
