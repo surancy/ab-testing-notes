@@ -63,7 +63,7 @@ This is for a binomial distribution defined as the total number of successes, wh
 
 Useful equations
 You may find these equations helpful in solving the quiz:
-$$p_hat = X/N$$  
+$p_hat = X/N$
 $$SE = sqrt(p_hat (1-p_hat) / N)$$ 
 $$m = z* SE$$
 
