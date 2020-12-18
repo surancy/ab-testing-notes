@@ -28,8 +28,8 @@ We have a online course learing website.
 **Customer Funnel** Homepage visits (most population) > explore website > create account > complete course/made purchase (least population).
 Initial hypothesis: Changing the color of the start now button from orange to pink will ~~increase the number of people exploring the course page~~ increase the click through probability of the button (and assume that this will increase the final business metric - total course completed)
 Which metrics?
-1. # of users completed course -> takes time.
-2. # of clicks. -> too much noise
+1. \# of users completed course -> takes time.
+2. \# of clicks. -> too much noise
   2.1: **click-through-rate**: # of clicks / # of page views
   2.2: **click-through-probability**: # unique visitors who click / # unique visitors to page.  
   e.g. 2 visitors, a clicks 0 times b clicks 5 times, CTR = 5/2; CTP = 1/2
