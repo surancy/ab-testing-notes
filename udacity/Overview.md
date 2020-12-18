@@ -24,6 +24,7 @@ More examples:
 
 ## Business Example
 We have a online course learing website.
+### Choose a metric
 **Customer Funnel** Homepage visits (most population) > explore website > create account > complete course/made purchase (least population).
 Initial hypothesis: Changing the color of the start now button from orange to pink will ~~increase the number of people exploring the course page~~ increase the click through probability of the button (and assume that this will increase the final business metric - total course completed)
 Which metrics?
@@ -34,5 +35,24 @@ Which metrics?
   e.g. 2 visitors, a clicks 0 times b clicks 5 times, CTR = 5/2; CTP = 1/2
   
 > Use a rate to measure **usability** and use a probability to measure **total impact**.
+
 e.g. usability measures how often a user find that button on a variety of buttons that they can click on. probability to measure how often a user went to the second page - we don't care if the user double-clicked, reload etc.
-  
+implementation of probability: count the unique one child page click of one page view.
+
+### Review statistics
+CTP follow a binomial distribution.
+Binomial distribution
+- 2 types of outcomes (success, failure)
+- Independent events
+- Identical distribution
+
+Ex.
+1. draw 20 cards from a shuffled deck, outcome red or black. Not binomial, not independent. Would be independent when we increase to a large sample size.
+2. roll a die 50 times, outcome 6 or other. Binomial
+3. clicks on a search result page, outcome click or not click. Not independent. Search one word and then would search again with slightly different words. 
+4. complete course after 2 weeks, outcome complete or not complete. Very close to independent - students are often not related.
+5. purchase of item within one week, outcome purchase or not purchase. Not independent. The items in the shopping cart are related.
+
+### Design
+
+### Analyze
