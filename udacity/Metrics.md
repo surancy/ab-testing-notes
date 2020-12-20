@@ -48,3 +48,28 @@ Sensitivity and robustness
 sensitive enough to pickup the change we care about, and robust enough to not influencing our test when something not interesting happens. E.G. choose medium if we want to track loading time because mean is heavily influenced by outliers that are very possible to happen. Choose 90th percentile if the change happen to the upper percentile of the group.
 
 ## Characterize
+
+Calculating variability
+
+|Type of metric|Distribution|Est. variance|
+|probability|binomial(normal)|p_hat(1-p_hat) / N|
+|mean|normal|std/N|
+|median/percentile|depends|depends|
+|count/difference|normal(maybe)|var(x) + var(y)|
+|rates|poisson|x_bar|
+|ratios|depends|depends|
+
+non-parametric methods: analyze data without making assumption about the data. may be noisier.
+e.g. sign test. can't test out the size.
+
+Emperical estimate:
+complicated metric distribution hard to measure. A/A testing to test the underlying variability, and validations. e.g. test if your random function is truly random, test sensitivity and the robustness of the metric. We can consider doing **bootstrap** before consider A/A test.
+
+Summary of the uses of A/A tests:
+- Sanity check - compare results to what you expect
+- estimate variance and calculate confidence
+- estimate confidence interval
+
+Summary:
+1. different metrics have different variablility. They might not be useful because the var is so high even if it makes perfect product / business sense.
+2. understand the distribution to estimate the var, using analytical and emperical methods.
