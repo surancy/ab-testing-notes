@@ -1,2 +1,2 @@
 # ab-testing-notes
-Notes on A/B testing courses/papers
+Collection of notes/projects on A/B testing courses/papers
